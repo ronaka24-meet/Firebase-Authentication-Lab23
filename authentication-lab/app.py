@@ -2,6 +2,22 @@ from flask import Flask, render_template, request, redirect, url_for, flash
 from flask import session as login_session
 import pyrebase
 
+config = {
+  'apiKey': "AIzaSyArzqR6Lf2mjF5p8M0gpsP_aflzb0pon7c",
+  'authDomain': "cheeeeeeese-f8077.firebaseapp.com",
+  'projectId': "cheeeeeeese-f8077",
+  'storageBucket': "cheeeeeeese-f8077.appspot.com",
+  'messagingSenderId': "660468371911",
+  'appId': "1:660468371911:web:ec873b97fb9807274889e2",
+  'measurementId': "G-2MHQ6R155G",
+  "databaseURL": ""
+};
+
+
+firebase = pyrebase.initialize_app(config)
+auth = firebase.auth()
+
+
 app = Flask(__name__, template_folder='templates', static_folder='static')
 app.config['SECRET_KEY'] = 'super-secret-key'
 
