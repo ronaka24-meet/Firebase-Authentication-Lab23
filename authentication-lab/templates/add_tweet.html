@@ -5,6 +5,38 @@
     <title>Title</title>
 </head>
 <body>
-    Great Job!
+    <form method="post" action="/add_tweet">
+    	<!-- Heading -->
+        <h4>
+            Create a post
+        </h4>
+
+        <!-- Subheading -->
+        <p >
+            Please fill up the information to tweet.
+        </p>
+
+        <!-- Full name -->
+        <div>
+            <label>Title*</label>
+            <div class="input-group">
+                <input type="text"  name="title">
+            </div>
+        </div>
+
+        <!-- Full name -->
+        <div>
+            <label>Text*</label>
+            <div class="input-group">
+                <input type="text"  name="text">
+            </div>
+        </div>
+
+        <!-- Button -->
+        <div>
+            <input type="submit"/>
+        </div>
+        
+    </form>
 </body>
 </html>

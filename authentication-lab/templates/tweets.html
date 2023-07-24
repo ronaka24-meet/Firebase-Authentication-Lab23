@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>tweets</title>
+</head>
+<body>
+	{% for tweet in tweets %}
+	<div>
+		<p>username: {{tweets[tweet]['uid']}}<br>
+			title: {{tweets[tweet]['title']}}<br>
+			text: {{tweets[tweet]['text']}}</p>
+	</div>
+	{% endfor %}
+</body>
+</html>
